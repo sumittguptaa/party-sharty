@@ -1,0 +1,36 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #f5f5f5;
+    background-image: url(../../../public/images/restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #f5f5f5;
+    margin-top: 2rem;
+}
+
+.hero button {
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0077c2;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.hero button:hover {
+    background-color: #005ea6;
+}

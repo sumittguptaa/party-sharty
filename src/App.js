@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header/Header";
+import HeroSection from "./components/HeroSection/HeroSection";
+import SearchBar from "./components/SearchBar/SearchBar";
+import FeaturedRestaurants from "./components/FeaturedRestaurants/FeaturedRestaurants";
+import SocialProof from "./components/SocialProof/SocialProof";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
+  const restaurants = [
+    {
+      id: 1,
+      name: "The Italian Kitchen",
+      image: "restaurant1.jpg",
+      description: "Authentic Italian cuisine with a modern twist.",
+      url: "https://unsplash.com/photos/CAhjZmVk5H4",
+    },
+    {
+      id: 2,
+      name: "The Taco Joint",
+      image: "restaurant2.jpg",
+      description: "The best tacos in town, made fresh daily.",
+      url: "https://unsplash.com/photos/CAhjZmVk5H4",
+    },
+    {
+      id: 3,
+      name: "Sushi Haven",
+      image: "restaurant3.jpg",
+      description: "Fresh sushi made to order.",
+      url: "https://unsplash.com/photos/CAhjZmVk5H4",
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <HeroSection />
+      <SearchBar />
+      <FeaturedRestaurants restaurants={restaurants} />
+      <SocialProof />
+      <Footer />
     </div>
   );
 }
