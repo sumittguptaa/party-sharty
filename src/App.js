@@ -5,6 +5,7 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import FeaturedRestaurants from "./components/FeaturedRestaurants/FeaturedRestaurants";
 import SocialProof from "./components/SocialProof/SocialProof";
 import Footer from "./components/Footer/Footer";
+import Login from "./components/Login/Login";
 import "./App.css";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <FeaturedRestaurants restaurants={restaurants} />
       <SocialProof />
       <Footer />
+      {/* <Login /> */}
     </div>
   );
 }

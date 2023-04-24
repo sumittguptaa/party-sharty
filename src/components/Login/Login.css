@@ -1,0 +1,59 @@
+.body-login{
+    width: 35rem;
+    margin-left: 22rem;
+    margin-top: 4rem;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.header-login{
+    display: flex;
+}
+.main-login{
+    padding-left: 2rem;
+}
+.country-isd{
+    height: 2.2rem;
+    width: 30rem;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+}
+.country-isd div p{
+    margin-top: 0.5rem;
+}
+.upward-arrow:hover{
+    cursor: pointer;
+}
+#mobNumber{
+    height: 2.2rem;
+    width: 30rem;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    
+}
+.continue-btn{
+    width: 30.5rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    background: white;
+    color: rgb(228, 13, 113);
+    border: 2px solid rgb(228, 13, 113);
+    border-radius: 10px;
+}
+.continue-btn:hover{
+    background: rgb(228, 13, 113);
+    color: white;
+    cursor: pointer;
+}
+.other-login-opt{
+    padding-left: 2rem;
+}
+.google-login{
+    border-radius: 10px;
+}
