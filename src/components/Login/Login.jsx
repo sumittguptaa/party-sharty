@@ -64,7 +64,7 @@ else{
             </div>
             <hr style={{marginTop:"-0.5rem"}} />
             <div className="main-login">
-                <p style={{fontSize:"1.5rem",fontWeight:"500"}}>Welcome to Airbnb</p>
+                <p style={{fontSize:"1.5rem",fontWeight:"500"}}>Welcome to PartySharty</p>
 
                 <form className='form-create' onSubmit={handleSubmit}>
                     <div className="country-isd" style={{display:"flex"}}>
