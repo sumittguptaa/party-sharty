@@ -1,7 +1,9 @@
 import React from "react";
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
-function Header() {
+function Header({ onLoginClick }) {
   return (
     <header>
       <img src="/images/logo-no-background.png" alt="Logo" />
@@ -21,6 +23,14 @@ function Header() {
           </li>
           <li>
             <a href="/contact">Contact</a>
+          </li>
+          {/* <li>
+            <button onClick={onLoginClick}>Login</button>
+          </li> */}
+          <li>
+            <button className="user-icon" onClick={onLoginClick}>
+              <FontAwesomeIcon icon={faUser} />
+            </button>
           </li>
         </ul>
       </nav>

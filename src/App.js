@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import SearchBar from "./components/SearchBar/SearchBar";
@@ -9,6 +9,7 @@ import Login from "./components/Login/Login";
 import "./App.css";
 
 function App() {
+    const [showLoginPopup, setShowLoginPopup] = useState(false);
   const restaurants = [
     {
       id: 1,
@@ -32,10 +33,14 @@ function App() {
       url: "https://unsplash.com/photos/CAhjZmVk5H4",
     },
   ];
-
+ const handleLoginClick = () => {
+   setShowLoginPopup(true);
+ };
   return (
     <div className="app">
-      <Header />
+      <Header onLoginClick={handleLoginClick} />
+      {showLoginPopup && <Login onClose={() => setShowLoginPopup(false)} />}
+
       <HeroSection />
       <SearchBar />
       <FeaturedRestaurants restaurants={restaurants} />
