@@ -1,4 +1,7 @@
 import React,{useState} from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import SearchBar from "./components/SearchBar/SearchBar";
@@ -6,6 +9,8 @@ import FeaturedRestaurants from "./components/FeaturedRestaurants/FeaturedRestau
 import SocialProof from "./components/SocialProof/SocialProof";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login";
+import RestaurantPage from "./components/RestaurantPage/RestaurantPage";
+import Parties from "./components/Parties/Parties";
 import "./App.css";
 
 function App() {
@@ -38,6 +43,14 @@ function App() {
  };
   return (
     <div className="app">
+      <Router>
+    <Routes>
+      
+    <Route path='/restaurants' element={<RestaurantPage/>} />
+    <Route path='/parties' element={<Parties/>} />
+
+    </Routes>
+   </Router>
       <Header onLoginClick={handleLoginClick} />
       {showLoginPopup && <Login onClose={() => setShowLoginPopup(false)} />}
 
@@ -46,7 +59,8 @@ function App() {
       <FeaturedRestaurants restaurants={restaurants} />
       <SocialProof />
       <Footer />
-      {/* <Login /> */}
+      {/* <RestaurantPage /> */}
+      
     </div>
   );
 }

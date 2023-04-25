@@ -1,0 +1,20 @@
+
+.list-of-restaurants{
+    display: flex;
+    flex-wrap: wrap;
+}
+.each-restaurant{ 
+    width: 20rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.each-restaurant-image{
+    border-radius: 10px;
+}
+.wishlist-logo{
+    margin-left: 9rem;
+    margin-top: 0.2rem;
+}
+.wishlist-logo:hover{
+    cursor: pointer;
+}

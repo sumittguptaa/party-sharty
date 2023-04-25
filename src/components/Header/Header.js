@@ -1,9 +1,11 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
-function Header({ onLoginClick }) {
+const Header = ({ onLoginClick })=> {
+ 
   return (
     <header>
       <img src="/images/logo-no-background.png" alt="Logo" />
@@ -13,10 +15,12 @@ function Header({ onLoginClick }) {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/restaurants">Restaurants</a>
+            
+          <Link to="/restaurants">Restaurants</Link>
           </li>
           <li>
-            <a href="/parties">Parties</a>
+          
+            <Link to="/parties">Parties</Link>
           </li>
           <li>
             <a href="/weddings">Weddings</a>
