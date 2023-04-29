@@ -1,12 +1,12 @@
 import {React , useState} from 'react'
 import './RestaurantPage.css'
-import Header from '../Header/Header'
+// import Header from '../Header/Header'
 
 const RestaurantPage = () => {
     const [selectedWishList,setselectedWishList] = useState(false)
   return (
     <div>
-        <Header />
+        {/* <Header /> */}
         <div className="list-of-restaurants">
             <div className="each-restaurant">
             <img className='each-restaurant-image' src="/images/restaurant2.jpg" alt="" height="220rem" width="300rem" />
